@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import NameList from './NameList'
-import TodoList from './TodoList'
+
+import List from './List'
+import withNames from './hocs/withNames'
+import withTodo from './hocs/withTodo'
+
+const NameList = withNames(List)
+const TodoList = withTodo(List)
 
 class App extends Component {
     render() {
