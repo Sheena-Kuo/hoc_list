@@ -29,7 +29,7 @@ class NameList extends Component {
                     <button type="submit">Submit</button>
                 </form>
                 {items.map(item=>(
-                    <li>{item}</li>
+                    <li key={item}>{item}</li>
                 ))}
             </ul>
         );
